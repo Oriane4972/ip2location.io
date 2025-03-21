@@ -9,7 +9,6 @@ library(httr)
 #'
 #' @param ip_addresses A vector of IP addresses.
 #' @param api_key Your IP2Location.io API key.
-#' @param base_url The base URL for the IP2Location.io API.
 #' @return A data frame with the extracted data for each IP.
 #' @export
 #' @importFrom httr GET status_code content
@@ -78,7 +77,9 @@ library(httr)
 #'   proxy_is_botnet \tab Whether the proxy is a botnet \cr
 #' }
 
-get_ip_data <- function(ip_addresses, api_key, base_url) {
+get_ip_data <- function(ip_addresses, api_key) {
+
+  base_url <- "https://api.ip2location.io"
 
   # Initialize an empty list to collect all the data for each IP
   all_data <- list()

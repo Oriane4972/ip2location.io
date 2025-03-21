@@ -4,14 +4,12 @@
 \alias{get_ip_data}
 \title{Get Data for Multiple IP Addresses}
 \usage{
-get_ip_data(ip_addresses, api_key, base_url)
+get_ip_data(ip_addresses, api_key)
 }
 \arguments{
 \item{ip_addresses}{A vector of IP addresses.}
 
 \item{api_key}{Your IP2Location.io API key.}
-
-\item{base_url}{The base URL for the IP2Location.io API.}
 }
 \value{
 A data frame with the extracted data for each IP.

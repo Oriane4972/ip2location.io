@@ -4,14 +4,12 @@
 \alias{save_ip_data}
 \title{Save IP Data to CSV}
 \usage{
-save_ip_data(ip_addresses, api_key, base_url, output_file = "IP2location.csv")
+save_ip_data(ip_addresses, api_key, output_file = "IP2location.csv")
 }
 \arguments{
 \item{ip_addresses}{A vector of IP addresses.}
 
 \item{api_key}{Your IP2Location.io API key.}
-
-\item{base_url}{The base URL for the IP2Location.io API.}
 
 \item{output_file}{The file path where to save the CSV (default is "IP2location.csv").}
 }
