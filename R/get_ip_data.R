@@ -1,5 +1,7 @@
 # get_ip_data.R
 
+library(httr)
+
 #' Get Data for Multiple IP Addresses
 #'
 #' This function takes a list of IP addresses and sends HTTP GET requests to the IP2Location.io API.
