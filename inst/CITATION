@@ -1,0 +1,8 @@
+bibentry(
+  bibtype  = "Manual",
+  title    = "ip2location.io: Batch IP Data Retrieval and Storage Using IP2Location.io",
+  author   = "Georgeac, O A M",
+  year     = 2025,
+  note     = "R package version 0.0.0-1",
+  url      = ""
+)
