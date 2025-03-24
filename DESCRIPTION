@@ -1,5 +1,5 @@
 Package: ip2location.io
-Title: Batch IP Data Retrieval and Storage Using IP2Location.io
+Title: Batch IP Data Retrieval and Storage Using 'IP2Location.io'
 Version: 0.0.0-2
 Authors@R: 
     person("Oriane", "Georgeac", email = "oriane.georgeac@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-6531-0075"))
