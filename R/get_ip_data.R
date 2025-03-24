@@ -4,12 +4,12 @@ library(httr)
 
 #' Retrieve and Save Data for Multiple IP Addresses
 #'
-#' This function retrieves information for a list of IP addresses using the 'IP2Location.io' API,
+#' This function retrieves information for a list of IP addresses using the IP2Location.io API,
 #' processes the data, and returns the data as a dataframe. The function also handles missing
 #' values by assigning NAs for any data field not provided by the user's API plan.
 #'
 #' @param ip_addresses A vector of IP addresses.
-#' @param api_key Your 'IP2Location.io' API key in quotation marks.
+#' @param api_key Your IP2Location.io API key in quotation marks.
 #' @return A data frame with the extracted data for each IP.
 #' @export
 #' @importFrom httr GET status_code content
@@ -17,7 +17,7 @@ library(httr)
 #' @importFrom dplyr bind_rows `%>%` group_by slice ungroup select
 #' @importFrom tidyselect all_of
 #'
-#' @note This function uses the 'IP2Location.io' API. Make sure you have a valid API key.
+#' @note This function uses the IP2Location.io API. Make sure you have a valid API key.
 #' \url{https://www.ip2location.io/pricing}
 #'
 #' @examples

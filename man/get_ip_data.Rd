@@ -2,21 +2,22 @@
 % Please edit documentation in R/get_ip_data.R
 \name{get_ip_data}
 \alias{get_ip_data}
-\title{Get Data for Multiple IP Addresses}
+\title{Retrieve and Save Data for Multiple IP Addresses}
 \usage{
 get_ip_data(ip_addresses, api_key)
 }
 \arguments{
 \item{ip_addresses}{A vector of IP addresses.}
 
-\item{api_key}{Your 'IP2Location.io' API key in quotation marks.}
+\item{api_key}{Your IP2Location.io API key in quotation marks.}
 }
 \value{
 A data frame with the extracted data for each IP.
 }
 \description{
-This function takes a list of IP addresses and sends HTTP GET requests to the 'IP2Location.io' API.
-It returns the IP information as a data frame, handling missing fields by returning NA.
+This function retrieves information for a list of IP addresses using the IP2Location.io API,
+processes the data, and returns the data as a dataframe. The function also handles missing
+values by assigning NAs for any data field not provided by the user's API plan.
 }
 \details{
 The function extracts the following fields (some of which may contain NAs
@@ -78,7 +79,7 @@ proxy_is_botnet \tab Whether the proxy is a botnet \cr
 }
 }
 \note{
-This function uses the 'IP2Location.io' API. Make sure you have a valid API key.
+This function uses the IP2Location.io API. Make sure you have a valid API key.
 \url{https://www.ip2location.io/pricing}
 }
 \examples{
