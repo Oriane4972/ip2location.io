@@ -2,7 +2,6 @@
 
 export(get_ip_data)
 export(safe_extract)
-export(save_ip_data)
 importFrom(dplyr,`%>%`)
 importFrom(dplyr,bind_rows)
 importFrom(dplyr,group_by)
@@ -14,4 +13,3 @@ importFrom(httr,content)
 importFrom(httr,status_code)
 importFrom(jsonlite,fromJSON)
 importFrom(tidyselect,all_of)
-importFrom(utils,write.csv)

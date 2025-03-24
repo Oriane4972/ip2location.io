@@ -9,13 +9,13 @@ get_ip_data(ip_addresses, api_key)
 \arguments{
 \item{ip_addresses}{A vector of IP addresses.}
 
-\item{api_key}{Your IP2Location.io API key.}
+\item{api_key}{Your 'IP2Location.io' API key in quotation marks.}
 }
 \value{
 A data frame with the extracted data for each IP.
 }
 \description{
-This function takes a list of IP addresses and sends HTTP GET requests to the IP2Location.io API.
+This function takes a list of IP addresses and sends HTTP GET requests to the 'IP2Location.io' API.
 It returns the IP information as a data frame, handling missing fields by returning NA.
 }
 \details{
@@ -78,6 +78,17 @@ proxy_is_botnet \tab Whether the proxy is a botnet \cr
 }
 }
 \note{
-This function uses the IP2Location.io API. Make sure you have a valid API key.
+This function uses the 'IP2Location.io' API. Make sure you have a valid API key.
 \url{https://www.ip2location.io/pricing}
+}
+\examples{
+\dontrun{
+# Example usage
+ip_addresses <- c("8.8.8.8", "1.1.1.1")         # Example IP addresses
+api_key <- "your_api_key_here"                  # Replace with your API key
+ip_data <- get_ip_data(ip_addresses, api_key)   # Returns a dataframe
+# If the user wants to save the dataframe as a CSV, they can do so:
+write.csv(ip_data, "IP2location.csv", row.names = FALSE)
+}
+
 }
