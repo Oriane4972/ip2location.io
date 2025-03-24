@@ -2,10 +2,11 @@
 
 library(httr)
 
-#' Get Data for Multiple IP Addresses
+#' Retrieve and Save Data for Multiple IP Addresses
 #'
-#' This function takes a list of IP addresses and sends HTTP GET requests to the 'IP2Location.io' API.
-#' It returns the IP information as a data frame, handling missing fields by returning NA.
+#' This function retrieves information for a list of IP addresses using the 'IP2Location.io' API,
+#' processes the data, and returns the data as a dataframe. The function also handles missing
+#' values by assigning NAs for any data field not provided by the user's API plan.
 #'
 #' @param ip_addresses A vector of IP addresses.
 #' @param api_key Your 'IP2Location.io' API key in quotation marks.
